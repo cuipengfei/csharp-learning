@@ -5,8 +5,6 @@ using System.Linq;
 
 namespace csharp_learning
 {
-
-
     public class UnitTest7
     {
         private readonly ITestOutputHelper _testOutputHelper;
@@ -44,8 +42,6 @@ namespace csharp_learning
         [Fact]
         public void ResponsibilityChainTest()
         {
-
-
             Func<int, int> addOne = (int input) =>
             {
                 _testOutputHelper.WriteLine("going to add 1");
