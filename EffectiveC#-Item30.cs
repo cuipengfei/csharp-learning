@@ -29,11 +29,11 @@ namespace System.Linq
             {
                 _testOutputHelper.WriteLine(i.ToString());
             }
-            
+
             // query statement
             var fooList = (from n in Enumerable.Range(0, 100)
                 select n * n).ToArray();
-            
+
             fooList.ForAll((n) => _testOutputHelper.WriteLine(n.ToString().ToString()));
         }
 
@@ -41,10 +41,14 @@ namespace System.Linq
         [Fact]
         public void CompareQueryStatementAndNestedForLoop()
         {
-            var resultFromLoop = BuildTupleWithLoop();
-            var resultFromQueryStatement = BuildTupleWithQueryStatement();
+            var resultFromLoop = BuildTupleWithLoop().ToArray();
+            var resultFromQueryStatement = BuildTupleWithQueryStatement().ToArray();
 
-            resultFromLoop.Should().Equal(resultFromQueryStatement);
+            for (int i = 0; i < resultFromLoop.Length; i++)
+            {
+                
+                Assert.Equal(resultFromLoop[i], resultFromQueryStatement[i]);
+            }
         }
 
         private static IEnumerable<Tuple<int, int>> BuildTupleWithQueryStatement()
@@ -52,21 +56,30 @@ namespace System.Linq
             return from x in Enumerable.Range(0, 10)
                 from y in Enumerable.Range(0, 10)
                 where x + y < 10
+                orderby (x*x + y*y) descending, x descending
                 select Tuple.Create(x, y);
         }
 
         private static IEnumerable<Tuple<int, int>> BuildTupleWithLoop()
         {
+            var storage = new List<Tuple<int, int>>();
             for (var x = 0; x < 10; x++)
             {
                 for (var y = 0; y < 10; y++)
                 {
                     if (x + y < 10)
                     {
-                        yield return Tuple.Create(x, y);    
+                        storage.Add(Tuple.Create(x, y));
                     }
                 }
             }
+
+            // 按到原点的距离降序排序
+            storage.Sort((point1, point2) => 
+                (point2.Item1 * point2.Item1 + point2.Item2 * point2.Item2).CompareTo(
+                point1.Item1 * point1.Item1 + point1.Item2 * point1.Item2));
+
+            return storage;
         }
     }
 
