@@ -2,5 +2,6 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7c6d3003_002D45f9_002D444b_002Db971_002D986beb06cdac/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ShouldReturnSquareValue" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::2930B233-FDFA-9DD0-7A40-F84224202A7C::net5.0::csharp_learning.UnitTest36&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::2930B233-FDFA-9DD0-7A40-F84224202A7C::net5.0::System.Linq.UnitTest30.CompareQueryStatementAndNestedForLoop&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
