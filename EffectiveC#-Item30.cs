@@ -41,14 +41,10 @@ namespace System.Linq
         [Fact]
         public void CompareQueryStatementAndNestedForLoop()
         {
-            var resultFromLoop = BuildTupleWithLoop().ToArray();
-            var resultFromQueryStatement = BuildTupleWithQueryStatement().ToArray();
+            var resultFromLoop = BuildTupleWithLoop();
+            var resultFromQueryStatement = BuildTupleWithQueryStatement();
 
-            for (int i = 0; i < resultFromLoop.Length; i++)
-            {
-                
-                Assert.Equal(resultFromLoop[i], resultFromQueryStatement[i]);
-            }
+            resultFromLoop.Should().Equal(resultFromQueryStatement);
         }
 
         private static IEnumerable<Tuple<int, int>> BuildTupleWithQueryStatement()
@@ -75,9 +71,18 @@ namespace System.Linq
             }
 
             // 按到原点的距离降序排序
-            storage.Sort((point1, point2) => 
-                (point2.Item1 * point2.Item1 + point2.Item2 * point2.Item2).CompareTo(
-                point1.Item1 * point1.Item1 + point1.Item2 * point1.Item2));
+            storage.Sort((point1, point2) =>
+                {
+                    var result = (point2.Item1 * point2.Item1 + point2.Item2 * point2.Item2).CompareTo(
+                        point1.Item1 * point1.Item1 + point1.Item2 * point1.Item2);
+                    if (result == 0)
+                    {
+                        result = point2.Item1.CompareTo(point1.Item1);
+                    }
+
+                    return result;
+                }
+            );
 
             return storage;
         }
