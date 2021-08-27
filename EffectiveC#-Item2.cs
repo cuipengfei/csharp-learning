@@ -20,9 +20,11 @@ namespace csharp_learning.Item2
             // readonly 可以在构造函数中重新赋值一次，const不可以
             //_year = year;
             _year2 = year;
+            _year2 = 2000;
         }
 
         private void createConstant(){
+            string[] a = {"123"};
             const int year3 = 2000;
             int myYear1 = year3; // myYear1 = 2000;
             // readonly 不可以在方法体内部声明
