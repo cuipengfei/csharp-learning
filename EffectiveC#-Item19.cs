@@ -78,11 +78,6 @@ namespace csharp_learning
             originalSequence = sequence;
         }
 
-        public ReverseEnumerable(IList<Item19.MyClass> sequence)
-        {
-            throw new System.NotImplementedException();
-        }
-
         public IEnumerator<T> GetEnumerator()
         {
             //string is a special case;
