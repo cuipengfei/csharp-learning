@@ -43,9 +43,9 @@ namespace csharp_learning
         public void UseAtAndDollar() {
             var name = "XiaoMing";
             var str = $@"Hello, ""{name}"". 
-It's a pleasure to meet you!";
+It's a pleasure to meet you\!";
             Assert.Equal("Hello, \"XiaoMing\". \n" +
-"It's a pleasure to meet you!", str);
+"It's a pleasure to meet you\\!", str);
         }
 
     }

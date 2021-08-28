@@ -7,6 +7,7 @@ namespace csharp_learning
     {
         //  event 是一种特殊的delegate
         public event EventHandler Handler;
+
         //  等价于 delegate void MyEventHandler(object sender, System.EventArgs e);
         //  private MyEventHandler Handler;
 
@@ -43,7 +44,10 @@ namespace csharp_learning
         // 以调用delegate的方式写事件触发函数
         void OnEvent(System.EventArgs e)
         {
-            Handler?.Invoke(this, e);
+            // Handler?.Invoke(this, e);
+
+            Handler?.Invoke(this,e);
+
         }
 
         void RaiseEvent()
