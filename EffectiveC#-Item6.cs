@@ -3,6 +3,7 @@ using Xunit;
 
 namespace csharp_learning
 {
+    // 尽量使用as 而不要硬编码
     public class EffectiveC__Item6
     {
         public static string getParamName(Object personName)
