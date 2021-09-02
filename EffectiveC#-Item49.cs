@@ -16,7 +16,7 @@ namespace csharp_learning
             }
             catch (InvalidCastException ex) when (number < 200)
             {
-                didCatchRun = true;
+                didCatchRun = true;                
             }
 
             Assert.True(didCatchRun);
