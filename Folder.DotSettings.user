@@ -1,7 +1,6 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7c6d3003_002D45f9_002D444b_002Db971_002D986beb06cdac/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ShouldReturnSquareValue" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f191504d_002De9f0_002D4f78_002D9321_002D69a4375a797f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ShouldReturn10WhenGivenAIs4AndBIs6" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
-    &lt;TestId&gt;xUnit::2930B233-FDFA-9DD0-7A40-F84224202A7C::net5.0::csharp_learning.UnitTest36&lt;/TestId&gt;
-    &lt;TestId&gt;xUnit::2930B233-FDFA-9DD0-7A40-F84224202A7C::net5.0::System.Linq.UnitTest30.CompareQueryStatementAndNestedForLoop&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::2930B233-FDFA-9DD0-7A40-F84224202A7C::net5.0::csharp_learning.UnitClass50&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
