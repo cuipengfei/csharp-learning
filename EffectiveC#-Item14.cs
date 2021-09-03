@@ -1,5 +1,4 @@
 using System;
-using System.Buffers.Binary;
 using Xunit;
 
 namespace csharp_learning
@@ -184,18 +183,18 @@ namespace csharp_learning
             {
             }
 
-            public Man(bool isMan , bool isWoman)
+            public Man(bool isMan, bool isWoman)
             {
                 this.IsMan = isMan;
                 this.IsWoman = isWoman;
             }
 
-            public Man(bool isMan) : this(true,false) // base()
+            public Man(bool isMan) : this(true, false) // base()
             {
             }
-            
+
             // 一般优先考虑默认值，但尽量避免更改给客户端带来影响
-            
+
             // 首个实例系统执行顺序
             // 1. 存放静态变量空间清零
             // 2. 执行静态变量初始化语句
@@ -207,9 +206,8 @@ namespace csharp_learning
             // 
             // 7. option 执行基类的实例构造函数
             // 8. 执行本类实例构造函数
-            
+
             // 其后再创建实例，从step5开始
-            
         }
     }
 }
