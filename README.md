@@ -5,9 +5,9 @@
 Random groups:
 https://bit.ly/3COcYsi
 
-50 items in Effective C#, 4 groups
+50 items in Effective C#, 7 groups
 
-![Image of Yaktocat](https://raw.githubusercontent.com/cuipengfei/csharp-learning/main/Screen%20Shot%202021-08-17%20at%205.09.31%20PM.png)
+![Image of Yaktocat](https://raw.githubusercontent.com/cuipengfei/csharp-learning/main/groups.png)
 
 Book link: https://www.amazon.com/Effective-Covers-Content-Update-Program-ebook-dp-B01N7C4P8N/dp/B01N7C4P8N
 
