@@ -1,4 +1,16 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=dcff8378_002Ddd7d_002D4221_002Dbc4b_002D455f33c10f2c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ShouldNotNullIfRight" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::2930B233-FDFA-9DD0-7A40-F84224202A7C::net5.0::csharp_learning.EffictiveC__Item3&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::2930B233-FDFA-9DD0-7A40-F84224202A7C::net5.0::csharp_learning.EffectiveC__Item6.ModifyInPlaceMayLeaveDataInconsistent&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::2930B233-FDFA-9DD0-7A40-F84224202A7C::net5.0::csharp_learning.EffectiveC__Item6&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::2930B233-FDFA-9DD0-7A40-F84224202A7C::net5.0::csharp_learning.EffectiveC__Item14.Test1&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::2930B233-FDFA-9DD0-7A40-F84224202A7C::net5.0::csharp_learning.EffectiveCItem14.Test2&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::2930B233-FDFA-9DD0-7A40-F84224202A7C::net5.0::csharp_learning.EffectiveCItem14.Test1&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::2930B233-FDFA-9DD0-7A40-F84224202A7C::net5.0::csharp_learning.EffectiveC__Item16.NumTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::2930B233-FDFA-9DD0-7A40-F84224202A7C::net5.0::csharp_learning.EffectiveC__Item16.NumTest2&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f191504d_002De9f0_002D4f78_002D9321_002D69a4375a797f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ShouldReturn10WhenGivenAIs4AndBIs6" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::2930B233-FDFA-9DD0-7A40-F84224202A7C::net5.0::csharp_learning.UnitClass50&lt;/TestId&gt;
