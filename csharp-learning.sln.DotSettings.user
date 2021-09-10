@@ -1,0 +1,22 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2586ad98_002D7304_002D4a65_002D9260_002D3bb6e65da319/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestActionDelegate" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::47EEEF4F-CBF0-44CB-8C3D-8E5D066081CA::net5.0::DefaultNamespace.TestItem32.TestActionDelegate&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::47EEEF4F-CBF0-44CB-8C3D-8E5D066081CA::net5.0::DefaultNamespace.TestItem32.TestPredicateDelegate&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::47EEEF4F-CBF0-44CB-8C3D-8E5D066081CA::net5.0::DefaultNamespace.TestItem32.TestFilterDelegate&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::47EEEF4F-CBF0-44CB-8C3D-8E5D066081CA::net5.0::DefaultNamespace.TestItem32.TestTransformDelegate&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cea5fe10_002D122e_002D4231_002D8f06_002D6be9a814d96d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="EventTest #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Or&gt;
+    &lt;TestAncestor&gt;
+      &lt;TestId&gt;xUnit::47EEEF4F-CBF0-44CB-8C3D-8E5D066081CA::net5.0::csharp_learning.EventHandlerExample.EventTest&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::47EEEF4F-CBF0-44CB-8C3D-8E5D066081CA::net5.0::csharp_learning.EffectiveC__Item33.CreatSequenceTest&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::47EEEF4F-CBF0-44CB-8C3D-8E5D066081CA::net5.0::csharp_learning.Test.TestExtentionMethod&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::47EEEF4F-CBF0-44CB-8C3D-8E5D066081CA::net5.0::csharp_learning.EffectiveC__Item33.CreatSequenceBasicTest&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::47EEEF4F-CBF0-44CB-8C3D-8E5D066081CA::net5.0::DefaultNamespace.TestItem32.TestActionDelegate&lt;/TestId&gt;
+    &lt;/TestAncestor&gt;
+    &lt;ProjectFile&gt;47EEEF4F-CBF0-44CB-8C3D-8E5D066081CA/f:EffectiveC#-Item27.cs&lt;/ProjectFile&gt;
+    &lt;ProjectFile&gt;47EEEF4F-CBF0-44CB-8C3D-8E5D066081CA/f:EffectiveC#-Item33.cs&lt;/ProjectFile&gt;
+  &lt;/Or&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
