@@ -48,7 +48,7 @@ namespace DefaultNamespace
             _listOfNumbers = new List<int> {1, 2, 3, 4, 5};
             _listOfNumbers.RemoveAll(it => it < 3);
 
-            Assert.Equal(2, _listOfNumbers.Count);
+            Assert.Equal(3, _listOfNumbers.Count);
         }
         
         // 2、有许多针对集合元素的复杂逻辑都可以用类似的技巧来实现
