@@ -17,8 +17,8 @@ namespace csharp_learning
         [Fact]
         public void ShouldThrow()
         {
-            Assert.True(ThrowWhenCall()); // 参数判断在实际调用时执行
-            Assert.True(ThrowWhenNew()); // 参数判断在创建时就执行
+            Assert.True(ThrowWhenActuallyUse()); // 参数判断在实际调用时执行
+            Assert.True(ThrowWhenCall()); // 参数判断在创建时就执行
         }
 
         public bool ThrowOrNot()
@@ -34,7 +34,7 @@ namespace csharp_learning
             }
         }
 
-        public bool ThrowWhenCall()
+        public bool ThrowWhenActuallyUse()
         {
             try
             {
@@ -48,7 +48,7 @@ namespace csharp_learning
             }
         }
 
-        public bool ThrowWhenNew()
+        public bool ThrowWhenCall()
         {
             try
             {
