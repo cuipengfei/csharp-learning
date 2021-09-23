@@ -2,6 +2,8 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a7a82f14_002D3264_002D4c14_002Da7a1_002De17690b1d9ba/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ShouldGetAddedNum" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::2930B233-FDFA-9DD0-7A40-F84224202A7C::net5.0::csharp_learning.EffectiveC__Item23.ShouldGetAddedNum&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::2930B233-FDFA-9DD0-7A40-F84224202A7C::net5.0::csharp_learning.EffectiveC__Item29.ShouldNotThrow&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::2930B233-FDFA-9DD0-7A40-F84224202A7C::net5.0::csharp_learning.EffectiveC__Item29.ShouldThrow&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=dcff8378_002Ddd7d_002D4221_002Dbc4b_002D455f33c10f2c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ShouldNotNullIfRight" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
