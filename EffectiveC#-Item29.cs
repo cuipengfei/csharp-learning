@@ -76,7 +76,7 @@ namespace csharp_learning
         }
         // 编译器会把上面的方法生成类似迭代器的类 Current MoveNext
 
-        // 生成两个参数之前的序列
+        // 生成两个参数之间的序列
         public static IEnumerable<char> GenerateAlphabetSubset(char first, char last)
         {
             if (last < first)
