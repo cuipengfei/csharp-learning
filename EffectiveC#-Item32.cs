@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using Xunit;
 using FluentAssertions;
-using FluentAssertions.Collections;
 
-namespace DefaultNamespace
+// 将迭代逻辑与操作（action）、谓词（predicate）及函数（function）解耦
+namespace csharp_learning
 {
     public class TestItem32
     {
@@ -24,7 +24,7 @@ namespace DefaultNamespace
             }
         }
 
-        public static IEnumerable<T> Transform<T>(IEnumerable<T> sequence, Func<T,T> method)
+        public static IEnumerable<T> Transform<T>(IEnumerable<T> sequence, Func<T, T> method)
         {
             foreach (T item in sequence)
             {
@@ -50,22 +50,22 @@ namespace DefaultNamespace
 
             Assert.Equal(3, _listOfNumbers.Count);
         }
-        
+
         // 2、有许多针对集合元素的复杂逻辑都可以用类似的技巧来实现
-        
+
         [Fact]
         public void TestFilterDelegate()
         {
             _listOfNumbers = new List<int> {1, 2, 3, 4, 5};
             var result = new List<int>();
-            foreach (int item in Where(_listOfNumbers, num => num>3))
+            foreach (int item in Where(_listOfNumbers, num => num > 3))
             {
                 result.Add(item);
             }
 
-            Assert.Equal( 2, result.Count);
+            Assert.Equal(2, result.Count);
         }
-        
+
         [Fact]
         public void TestTransformDelegate()
         {
@@ -76,7 +76,7 @@ namespace DefaultNamespace
                 result.Add(item);
             }
 
-            var expected =  new List<int> {2, 3, 4, 5, 6};
+            var expected = new List<int> {2, 3, 4, 5, 6};
             result.Should().ContainInOrder(expected);
         }
     }
