@@ -37,7 +37,7 @@ namespace csharp_learning
         
         public class ReadonlyExample
         {
-            public string ReadOnlyName { get; } // same with { get; private set;}
+            public string ReadOnlyName { get; init; } // same with { get; private set;}
             
             public ReadonlyExample(string name)
             {
@@ -75,7 +75,7 @@ namespace csharp_learning
             private int[] theValues = new int[100];
             
             //若参数不是整数的一维索引器，则可以用来定义映射关系  => 通过索引器的形式发布字典
-            private Dictionary<string, SuggestedWay> addressValues;
+            private Dictionary<string, SuggestedWay> addressValues = new Dictionary<string, SuggestedWay>();
             public SuggestedWay this[string name]
             {
                 get => addressValues[name];
@@ -130,7 +130,7 @@ namespace csharp_learning
             var notSuggestedWayName = notSuggestedWay.Name;
 
             var suggestedWay = new SuggestedWay();
-            notSuggestedWay.Name = "abc";
+            suggestedWay.Name = "abc";
             var suggestedWayName = suggestedWay.Name; // 在C#语言中， 属性这种元素可以像数据成员一样被访问， 但它们其实是通过方法来实现的
 
             ParameterPropertyExample example = new ParameterPropertyExample();

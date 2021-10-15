@@ -5,5 +5,6 @@
     &lt;TestId&gt;xUnit::47EEEF4F-CBF0-44CB-8C3D-8E5D066081CA::net5.0::csharp_learning.UnitTest35.ConsoleOutput&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::47EEEF4F-CBF0-44CB-8C3D-8E5D066081CA::net5.0::csharp_learning.EffectiveC__Item45.ShouldNotThrowExceptionWhenCallFileExist&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::47EEEF4F-CBF0-44CB-8C3D-8E5D066081CA::net5.0::csharp_learning.EffectiveC__Item45.ShouldThrowExceptionWhenCallFileOpenGivenInvalidFile&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::47EEEF4F-CBF0-44CB-8C3D-8E5D066081CA::net5.0::csharp_learning.UnitTest1_MoreEffective.Test&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
