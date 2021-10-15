@@ -9,7 +9,7 @@ namespace csharp_learning
     {
 
         [Fact]
-        public void VarShouldNotLoseType()
+        public void FormattableStringContentIsNotFixedOnAssignment()
         {
             DateTime dateTime = DateTime.Parse("2021-01-01");
 
