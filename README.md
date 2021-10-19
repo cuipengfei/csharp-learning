@@ -5,11 +5,19 @@
 Random groups:
 https://bit.ly/3COcYsi
 
+# Effective C#
 50 items in Effective C#, 7 groups
 
-![Image of Yaktocat](https://raw.githubusercontent.com/cuipengfei/csharp-learning/main/groups.png)
+![Image](https://raw.githubusercontent.com/cuipengfei/csharp-learning/main/groups.png)
 
 Book link: https://www.amazon.com/Effective-Covers-Content-Update-Program-ebook-dp-B01N7C4P8N/dp/B01N7C4P8N
+
+# More Effective C#
+50 items, 8 groups
+
+![Image](https://raw.githubusercontent.com/cuipengfei/csharp-learning/main/book2-groups.png)
+
+Book link: https://www.amazon.com/More-Effective-Specific-Software-Development/dp/0672337886
 
 ## how to use this repo
 
