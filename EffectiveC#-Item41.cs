@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 namespace csharp_learning
 {
-    public static class EffectiveC__Item41
+    public static  class EffectiveC__Item41
     {
         public static IEnumerable<string> ReadLines(this TextReader reader)
         {
@@ -60,7 +61,7 @@ namespace csharp_learning
                 }
             }
 
-            //
+            //要由接收返回方法的例程去关闭，就会不知道究竟在哪段代码处被关闭
             using (TextReader text = new StreamReader(File.OpenRead("xxx.txt")))
                 return ReadNumbersFromStream(text);
         }
@@ -113,11 +114,22 @@ namespace csharp_learning
             return filter.PassFilter(input) ? input : 0;
         }
 
-        private static int LeakingClosure(int mod)
+        private static IEnumerable<int> LeakingClosure(int mod)
         {
-            var random = new Random();
-            var result = random.Next(1,101);
-            return result > ImportantStatic(result) ? result : -1;
+            return from n in GetNumbers(mod)
+                where n > ImportantStatic(n)
+                select n;
+        }
+
+        private static ICollection<int> GetNumbers(int num)
+        {
+            var result = new List<int>();
+            for (int i = 0; i <= num; i++)
+            {
+                result.Add(new Random().Next(1,101));
+            }
+
+            return result;
         }
     }
 
@@ -138,5 +150,5 @@ namespace csharp_learning
             return false;
         }
     }
-    
+
 }
