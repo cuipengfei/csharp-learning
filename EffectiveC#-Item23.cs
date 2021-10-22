@@ -40,7 +40,9 @@ namespace csharp_learning
             Func<T, T, T> AddFunc) =>
             AddFunc(left, right);
     }
-
+    
+    
+    // 2
     // 设备原始数据存储在两个list中，依次读取存为point list
     public class Point
     {
@@ -53,9 +55,8 @@ namespace csharp_learning
             Y = y;
         }
     }
-
-    // 2
-    // delegate TOutput Func<T1, T2, TOutput>(T1 arg1, T2 arg2)
+    
+    // delegate TOutput Func<T1, T2, TOutput>(T1 arg1, T2 arg2);
     public static class Feature
     {
         public static IEnumerable<TOutput> Zip<T1, T2, TOutput>(IEnumerable<T1> left, IEnumerable<T2> right,
