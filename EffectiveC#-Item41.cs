@@ -33,13 +33,16 @@ namespace csharp_learning
 
         public static IEnumerable<IEnumerable<int>> Use()
         {
+            //不会立刻返回值，而是要等程序用到真正的值再去查询并返回
             var t = new StreamReader(File.OpenRead("xxx.txt"));
             var arrayOfNumbers = ReadNumbersFromStream(t);
 
-            //会报错，因为试图从已关闭的资源中读取内容
+            //若理解错生命周期，释放资源，就会报错，因为试图从已关闭的资源中读取内容
             IEnumerable<IEnumerable<int>> rowOfNumbers;
             using (TextReader text = new StreamReader(File.OpenRead("xxx.txt")))
+            {
                 rowOfNumbers = ReadNumbersFromStream(text);
+            }
             foreach (var rowOfNumber in rowOfNumbers)
             {
                 foreach (var i in rowOfNumber)
@@ -59,7 +62,7 @@ namespace csharp_learning
                         Console.Write("");
                     }
                 }
-            }
+            } 
 
             //要由接收返回方法的例程去关闭，就会不知道究竟在哪段代码处被关闭
             using (TextReader text = new StreamReader(File.OpenRead("xxx.txt")))
@@ -94,18 +97,30 @@ namespace csharp_learning
 
         public static void AnothgerUse()
         {
-            ProcessFile("xxx.txt", (arrayOfNumbers) =>
+            var result = 0;
+            ProcessFile<int>("xxx.txt", (arrayOfNumbers) =>
             {
                 foreach (var arrayOfNumber in arrayOfNumbers)
                 {
                     foreach (var i in arrayOfNumber)
                     {
-                        Console.Write("");
+                        result += i;
                     }
                 }
 
-                return 0;
+                return result;
             });
+            // other operations
+        }
+        
+        public static void ThirdUse()
+        {
+            ProcessFile<int>("xxx.txt", (arrayOfNumbers) =>
+            {
+                return (from arrayOfNumber in arrayOfNumbers
+                    select arrayOfNumber.Max()).Max();
+            });
+            // other operations
         }
 
         public static int ImportantStatic(int input)
