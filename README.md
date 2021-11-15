@@ -15,7 +15,7 @@ Book link: https://www.amazon.com/Effective-Covers-Content-Update-Program-ebook-
 # More Effective C#
 50 items, 8 groups
 
-![Image](https://raw.githubusercontent.com/cuipengfei/csharp-learning/main/book2-groups.png)
+![Image](https://raw.githubusercontent.com/cuipengfei/csharp-learning/main/book2-groups-updated.png)
 
 Book link: https://www.amazon.com/More-Effective-Specific-Software-Development/dp/0672337886
 
