@@ -13,7 +13,7 @@ https://bit.ly/3COcYsi
 Book link: https://www.amazon.com/Effective-Covers-Content-Update-Program-ebook-dp-B01N7C4P8N/dp/B01N7C4P8N
 
 # More Effective C#
-50 items, 8 groups
+50 items, 9 groups
 
 ![Image](https://raw.githubusercontent.com/cuipengfei/csharp-learning/main/book2-groups-updated.png)
 
