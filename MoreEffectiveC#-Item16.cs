@@ -3,6 +3,7 @@ using Xunit;
 
 namespace csharp_learning
 {
+    // 用Event模式实现通知功能
     public class MoreEffectiveC__Item16
     {
         [Fact]
