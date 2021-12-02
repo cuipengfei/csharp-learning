@@ -44,7 +44,7 @@ namespace csharp_learning
     public class MoreEffectiveCSharpItem20
     {
         [Fact]
-        public void BadExampleOfObjHashCode()
+        public void ExampleOfEventListenersCoupling()
         {
             int runCount1 = 0;
             int runCount2 = 0;
