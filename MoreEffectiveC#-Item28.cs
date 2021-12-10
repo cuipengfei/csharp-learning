@@ -8,13 +8,14 @@ namespace csharp_learning
 {
     public class MoreEffectiveC__Item28
     {
+        // 28. 不要编写返回值类型为 void 的异步方法
+        
         private readonly ITestOutputHelper _testOutputHelper;
 
         public MoreEffectiveC__Item28(ITestOutputHelper testOutputHelper)
         {
             _testOutputHelper = testOutputHelper;
         }
-        // 28. 不要编写返回值类型为 void 的异步方法
 
         public void Run()
         {
