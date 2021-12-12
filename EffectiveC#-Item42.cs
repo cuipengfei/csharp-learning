@@ -10,12 +10,6 @@ namespace csharp_learning
 {
     public class EffectiveC__Item42
     {
-        private readonly ITestOutputHelper _testOutputHelper;
-
-        public EffectiveC__Item42(ITestOutputHelper testOutputHelper)
-        {
-            _testOutputHelper = testOutputHelper;
-        }
 
         public class dbContext : DbContext
         {
@@ -96,16 +90,5 @@ namespace csharp_learning
             from customer in customers.AsQueryable()
             where customer.Name.LastIndexOf("c", StringComparison.Ordinal).Equals(0)
             select customer;
-        
-        [Fact]
-        public void ShouldGetTiamSpanForQuery()
-        {
-            var cccc = new Customer();
-            var dddd = new Customer();
-            _testOutputHelper.WriteLine(nameof(Customer));
-            _testOutputHelper.WriteLine(typeof(Customer).ToString());
-            _testOutputHelper.WriteLine(cccc.GetType().ToString());
-            _testOutputHelper.WriteLine(cccc.GetType().Equals(typeof(Customer)).ToString());
-        }
     }
 }
