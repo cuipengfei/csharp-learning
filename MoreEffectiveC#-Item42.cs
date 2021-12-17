@@ -7,7 +7,6 @@ namespace csharp_learning
     
     public class MoreEffectiveCSharpItem42
     {
-
         private void Engine_RaiseProgress(object sender, EventArgs e)
         {
             if (sender is BackendWorker engine)
@@ -21,7 +20,19 @@ namespace csharp_learning
     {
         public event EventHandler<EventArgs> RaiseProgress;
         private readonly object _syncHandle = new();
+        
         private int _progressCounter;
+        
+        public int ProgressCounter
+        {
+            get
+            {
+                lock (_syncHandle)
+                {
+                    return _progressCounter;
+                }
+            }
+        }
 
         public void DoWork()
         {
@@ -31,19 +42,8 @@ namespace csharp_learning
                 {
                     Thread.Sleep(100);
                     _progressCounter++;
-                    RaiseProgress?.Invoke(this, EventArgs.Empty);
                 }
-            }
-        }
-
-        public int ProgressCounter
-        {
-            get
-            {
-                lock(_syncHandle)
-                {
-                    return _progressCounter;
-                }
+                RaiseProgress?.Invoke(this, EventArgs.Empty);
             }
         }
     }
